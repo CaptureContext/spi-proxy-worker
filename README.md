@@ -1,6 +1,6 @@
 # spi-proxy-worker
 
-A Cloudlfalre worker to proxy request to https://swiftpackageindex.com. To learn read [this](https://developers.cloudflare.com/workers/)
+A Cloudlfalre worker to proxy request to https://swiftpackageindex.com. To learn more about workers read [this](https://developers.cloudflare.com/workers/)
 
 > [!WARNING]
 > Currently deployed at https://spi-proxy-worker.dev-capturecontext-8f5.workers.dev
