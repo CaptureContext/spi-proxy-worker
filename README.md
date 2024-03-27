@@ -28,7 +28,7 @@ make deploy
 ```
 
 > [!WARNING]
-> You need to add an `API_TOKEN` to a deployed worker. To do this run `npx wrangler secret put API_TOKEN` and put a token value when prompted.
+> You need to add an `API_TOKEN` to a worker after deployment. To do this run `npx wrangler secret put API_TOKEN` and put a token value when prompted.
 
 > [!WARNING]
 > If command fails with `Authentication error` try running `npx wrangler login` first
