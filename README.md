@@ -5,19 +5,11 @@ A Cloudlfalre worker to proxy request to https://swiftpackageindex.com. To learn
 > [!WARNING]
 > Currently deployed at https://spi-proxy-worker.dev-capturecontext-8f5.workers.dev
 
-## Getting Started
+## Local Development
 
 You need a `node.js` and `npm`. I recommend installing [nvm](https://github.com/nvm-sh/nvm) to manage `js` related stuff and don’t mess with a system. 
 
-To get started run:
-
-```shell
-make boostrap
-```
-
-## Local Development
-
-To run localy use:
+To run localy:
 
 ```shell
 make run

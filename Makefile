@@ -1,5 +1,5 @@
 run: 
-	@npm run dev
+	@npm install && npm run dev
 
 deploy:
 	npx wrangler deploy
