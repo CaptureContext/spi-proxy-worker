@@ -11,8 +11,6 @@ export default {
   	let response = await cache.match(resultURL);
 
   	if (!response) { 
-  		console.log(`Cache miss for: ${resultURL}. Fetching and caching request.`);
-
   		response = await fetch(resultURL, {
 	  		method: 'GET',
 				headers: { 
@@ -26,9 +24,7 @@ export default {
       response.headers.append("Cache-Control", `s-maxage=${oneHourInSeconds}`); // TTL of response
 
       ctx.waitUntil(cache.put(resultURL, response.clone()));
-  	} else {
-			console.log(`Cache hit for: ${resultURL}.`);
-  	}
+  	} 
 
     return response;
   },
