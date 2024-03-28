@@ -23,6 +23,7 @@ export default {
 	  	const oneHourInSeconds = 3600;
       response.headers.append("Cache-Control", `s-maxage=${oneHourInSeconds}`); // TTL of response
 
+      // Seems like `put` doesn’t cache anything with bad codes (4XX, 5XX, etc.) and thats good! We only want ok responses to be cached.
       ctx.waitUntil(cache.put(resultURL, response.clone()));
   	} 
 
